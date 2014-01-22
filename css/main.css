@@ -9,6 +9,7 @@ h1, h2, h3, h4 {
   font-weight: normal;
   font-size: 1em;
   line-height: 1.23em;
+  margin: 0;
 }
 a {
   color: #268bd2;
@@ -42,6 +43,13 @@ ul > li:before {
   content: "*";
   float: left;
   margin-left: -1.23em;
+}
+li {
+  line-height: 1.23em;
+}
+p {
+  line-height: 1.23em;
+  margin: 1.23em 0;
 }
 #container {
   margin-left: 10%;
