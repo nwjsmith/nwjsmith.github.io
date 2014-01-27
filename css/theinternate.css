@@ -440,7 +440,7 @@ h1:before {
 }
 h2:before {
   content: "## ";
-  margin: 0 0 0 -1.523em; /* Margin found through experimentation */
+  margin: 0 0 0 -1.510em; /* Margin found through experimentation */
 }
 h3:before {
   content: "### ";
@@ -485,7 +485,7 @@ ul {
 ul > li:before {
   content: "* ";
   color: #93a1a1;
-  margin-left: -1.00em;
+  margin-left: -1.02em;
 }
 ol {
   padding: 0;
