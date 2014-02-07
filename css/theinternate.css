@@ -434,6 +434,9 @@ h1, h2, h3, h4, h5, h6 {
   font: normal 1em "inconsolata";
   margin: 1.23em 0 1.23em 10%;
 }
+code {
+  font-family: "inconsolata";
+}
 h1:before {
   content: "# ";
   margin: 0 0 0 -1.02em; /* Margin found through experimentation */
