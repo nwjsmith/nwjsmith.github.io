@@ -12,3 +12,8 @@ You should follow me on:
 * [Speaker Deck](https://speakerdeck.com/nwjsmith)
 * [LinkedIn](https://ca.linkedin.com/in/nwjsmith)
 
+# Posts
+{% for post in site.posts %}
+* <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+{% endfor %}
+

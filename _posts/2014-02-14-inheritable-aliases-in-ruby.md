@@ -4,7 +4,7 @@ title: Inheritable aliases in Ruby
 ---
 # Inheritable aliases in Ruby
 
-When creating an abstract class in Ruby, it's _sometimes helpful_ to provide aliases to abstract methods. Unfortunately, `alias_method` behaves unexpectedly in this situation.
+Ruby's method aliases are pretty handy. So is inheritance. It's too bad that the two don't work well together:
 
 ``` ruby
 class Greeter
@@ -27,7 +27,7 @@ employee.salutation # =>
 # ~>  from -:16:in `<main>'
 ```
 
-The alias to greeting created by the `alias_method` call in the superclass is pointing to the abstract `#greeting`, not the implementation in the subclass. One of the ways we can get around this is by using the `Forwardable` module provided in stdlib. `Forwardable` provides a method, `def_delegator`, that takes a target, the name of a method to delegate to, and an alias to delegate from.
+[Wat](https://www.destroyallsoftware.com/talks/wat)? Turns out that `alias_method` creates an alias that references the original method rather than the overwritten one. Fortunately, the Ruby standard library provides a workaround. By using the [`Forwardable`](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/forwardable/rdoc/Forwardable.html) module and its [`def_delegator` method](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/forwardable/rdoc/Forwardable.html#method-i-def_delegator), we can declare a delegator that forwards any call on to the overwritten method.
 
 ``` ruby
 require 'forwardable'
@@ -51,7 +51,7 @@ employee.greeting # => "Howdy"
 employee.salutation # => "Howdy"
 ```
 
-This works because `def_delegator` will define a method that delegates all calls to `#salutation` through to `self#greeting`. When calling `employee.salutation`, `self` is an instance of `Employee` and so the delegator calls `Employee#greeting` rather than the implementation in the superclass. The problem with `def_delegator` is that it's confusing for whomever comes across this code next. It isn't clear at all that we're using `def_delegator` to get around a limitation of `alias_method`. For that reason, I'd recommend creating our own `inheritable_alias` method that can be used in place of this.
+Cool, now we have the alias working with inheritance. The only problem with this approach is maintainence. Let's make it clear why we're using something other than `alias_method` by defining our own inheritable version.
 
 ``` ruby
 module Aliases
@@ -63,7 +63,7 @@ module Aliases
 end
 ```
 
-Now our code can look much cleaner.
+Now we can clean our code up.
 
 ``` ruby
 class Greeter
@@ -84,3 +84,5 @@ employee = Employee.new
 employee.greeting # => "Howdy"
 employee.salutation # => "Howdy"
 ```
+
+Now there's clarity around why we're not using `alias_method`. You can tell just by reading the method name. Rad.

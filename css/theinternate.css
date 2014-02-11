@@ -526,9 +526,11 @@ em {
 em:before, em:after {
   content: "_";
   font-weight: normal;
+  back
 }
 p code:before, p code:after {
-  content: "`";
+  content: "\0060";
+  color: #dc322f;
 }
 .highlight pre {
   margin: 0 0 0 10%;
@@ -541,7 +543,7 @@ p code:before, p code:after {
   padding: 0;
 }
 hr {
-  margin: 1.23em 0 1.23em 10%;
+  margin: 1.23em 0 2.46em 10%;
   line-height: 1.23em;
   width: 34em;
   border: none;
