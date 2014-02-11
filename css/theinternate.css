@@ -535,8 +535,9 @@ p code:before, p code:after {
 .highlight pre {
   margin: 0 0 0 10%;
   padding: 1.23em 0;
-  overflow: scroll;
+  overflow: auto;
   width: 34em;
+  white-space: pre;
 }
 .highlight pre code {
   margin: 0;
