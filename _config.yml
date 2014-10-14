@@ -1,5 +1,5 @@
 author: Nate Smith
 title: The Internate
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 url: http://theinternate.com
