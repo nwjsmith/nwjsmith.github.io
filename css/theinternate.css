@@ -488,6 +488,9 @@ p, ul, ol {
   margin: 1.23em 0 1.23em 10%;
   width: 34em;
 }
+#container {
+  min-width: 34em;
+}
 ul {
   list-style: none;
   padding: 0;
