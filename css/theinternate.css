@@ -488,9 +488,6 @@ p, ul, ol {
   margin: 1.23em 0 1.23em 10%;
   width: 34em;
 }
-#container {
-  min-width: 34em;
-}
 ul {
   list-style: none;
   padding: 0;
@@ -542,10 +539,16 @@ p code:before, p code:after {
   content: "\0060";
   color: #dc322f;
 }
+#container {
+  min-width: 34em;
+}
+.highlight {
+  overflow-x: scroll;
+  padding: 1.23em 1.23em 1.23em 10%;
+  width: 100%;
+}
 .highlight pre {
-  margin: 0 0 0 10%;
-  padding: 1.23em 0;
-  overflow: auto;
+  margin: 0;
   width: 34em;
   white-space: pre;
 }
