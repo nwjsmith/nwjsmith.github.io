@@ -1,6 +1,6 @@
 author: Nate Smith
-highlighter: pygments
-markdown: redcarpet
+highlighter: rouge
+markdown: kramdown
 sass:
   style: compressed
 title: The Internate
