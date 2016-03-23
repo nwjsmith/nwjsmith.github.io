@@ -406,22 +406,22 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-@import 'font';
+@import 'colors';
 @import 'colors';
 body {
   background: $base3;
   color: $base01;
-  font: 0.95em "inconsolata-dzdz"; /* 17/16px */
+  font: 0.95em "Hack"; /* 17/16px */
   line-height: 1.23em;
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   color: $red;
-  font: normal 1em "inconsolata-dzdz";
+  font: normal 1em "Hack";
   margin: 1.23em 0 1.23em 10%;
 }
 code {
-  font-family: "inconsolata-dzdz";
+  font-family: "Hack";
 }
 h1:before {
   content: "# ";
