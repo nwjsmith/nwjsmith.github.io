@@ -1,129 +1,109 @@
 ---
 ---
-@import 'normalize';
 @import 'colors';
+
+$left-margin: 8rem;
+
+html {
+  font-family: monospace;
+  font-size: 123.0769231%;
+  line-height: 1.5rem;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   background: $base3;
-  color: $base01;
-  font: 0.95em "Hack"; /* 17/16px */
-  line-height: 1.23em;
+  color: $base00;
   margin: 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
   color: $red;
-  font: normal 1em "Hack";
-  margin: 1.23em 0 1.23em 10%;
+  font: normal 1rem monospace;
+  margin: 1.5rem $left-margin;
+  width: 65ch;
+
+  a, a:visited, a:hover {
+    color: $red;
+    text-decoration: none;
+  }
 }
-code {
-  font-family: "Hack";
+
+h1 {
+  &:before {
+    content: '# ';
+    margin-left: -2ch;
+  }
 }
-h1:before {
-  content: "# ";
-  margin: 0 0 0 -1.02em; /* Margin found through experimentation */
+
+figure {
+  margin: 1.5rem 0;
+
+  &.highlight {
+    background: $base03;
+
+    pre {
+      margin: 0 $left-margin;
+      overflow: scroll;
+      padding: 1.5rem 0;
+      width: 65ch;
+    }
+  }
 }
-h2:before {
-  content: "## ";
-  margin: 0 0 0 -1.510em; /* Margin found through experimentation */
-}
-h3:before {
-  content: "### ";
-  margin: 0 0 0 -2.03em; /* Margin found through experimentation */
-}
-h4:before {
-  content: "#### ";
-  margin: 0 0 0 -2.535em; /* Margin found through experimentation */
-}
-header {
-  margin: 1.23em 0;
-}
-header a, header a:visited {
-  color: $red;
-}
-header a:hover {
-  text-decoration: none;
-}
-header h1 {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 1.23em;
-  margin: 0 0 0 10%;
-}
-header h1:before {
-  content: "==================================================================";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1.23em;
+
+pre {
   margin: 0;
 }
-p, ul, ol, .highlight {
-  margin: 1.23em 0 1.23em 10%;
-  width: 34em;
+
+p {
+  width: 65ch;
+  margin: 1.5rem $left-margin;
+
+  code:before, code:after {
+    color: $red;
+    content: "`";
+  }
 }
+
 ul {
   list-style: none;
+  margin: 0 $left-margin;
   padding: 0;
+
+  li {
+    &:before {
+      color: $base1;
+      content: "* ";
+      margin-left: -2ch;
+    }
+  }
 }
-ul > li:before {
-  content: "* ";
-  color: $base1;
-  margin-left: -1.02em;
-}
-ol {
-  padding: 0;
-  list-style: none;
-}
-ol > li {
-  counter-increment: item;
-}
-ol > li:before {
-  margin-left: -1.51em;
-  margin-right: 0.51em;
-  content: counter(item) ".";
-  color: $base1;
-}
+
 a {
   color: $blue;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $violet;
+  }
 }
-a:visited {
-  color: $violet;
-}
-a:hover {
-  text-decoration: underline;
-}
-strong {
-  font-weight: normal;
-}
-strong:before, strong:after {
-  content: "**";
-  font-weight: normal;
-}
-em {
-  font-style: normal;
-}
-em:before, em:after {
-  content: "_";
-  font-weight: normal;
-}
-p code:before, p code:after {
-  content: "\0060";
-  color: $red;
-}
-#container {
-  min-width: 34em;
-}
+
 hr {
-  margin: 1.23em 0 2.46em 10%;
-  line-height: 1.23em;
-  width: 34em;
-  border: none;
+  line-height: 1.5rem;
+  margin: 0 $left-margin;
   text-align: center;
-}
-hr:before {
-  content: "* * *";
-  color: $cyan;
+  border: 0;
+  width: 65ch;
+
+  &:before {
+    color: $cyan;
+    content: "* * *";
+  }
 }
 
 .highlight {
