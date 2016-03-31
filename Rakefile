@@ -14,9 +14,7 @@ task test: :build do
     '_site/',
     check_favicon: true,
     check_html: true,
-    typhoeus: {
-      headers: { 'User-Agent' => 'Mozilla/5.0 (compatible; HTMLProofer)' }
-    }
+    url_ignore: [/linkedin\.com/]
   ).run
 end
 
