@@ -2,8 +2,17 @@
 ---
 @import 'colors';
 
-$left-margin: 8rem;
-$width: 65ch;
+$left-margin: 4ch;
+
+figure.highlight pre, h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
+  min-width: 41ch;
+}
+
+@media screen and (min-width: 1024px) {
+  figure.highlight pre, h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
+    width: 62ch;
+  }
+}
 
 html {
   font-family: monospace;
@@ -18,13 +27,13 @@ body {
   color: $base00;
   margin: 0;
   padding-bottom: 1.5rem;
+  min-width: 45ch;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $red;
   font: normal 1rem monospace;
   margin: 1.5rem $left-margin;
-  width: $width;
 
   a, a:visited, a:hover {
     color: $red;
@@ -32,11 +41,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  &:before {
-    content: '# ';
-    margin-left: -2ch;
-  }
+h1:before {
+  content: '# ';
+  margin-left: -2ch;
+}
+
+h2:before {
+  content: '## ';
+  margin-left: -3ch;
 }
 
 figure {
@@ -49,7 +61,6 @@ figure {
       margin: 0 $left-margin;
       overflow: scroll;
       padding: 1.5rem 0;
-      width: $width;
     }
   }
 }
@@ -59,7 +70,6 @@ pre {
 }
 
 p {
-  width: $width;
   margin: 1.5rem $left-margin;
 
   code:before, code:after {
@@ -72,7 +82,6 @@ ul {
   list-style: none;
   margin: 0 $left-margin;
   padding: 0;
-  width: $width;
 
   li {
     &:before {
@@ -101,7 +110,6 @@ hr {
   margin: 0 $left-margin;
   text-align: center;
   border: 0;
-  width: $width;
 
   &:before {
     color: $cyan;
