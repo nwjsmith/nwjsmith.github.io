@@ -10,7 +10,7 @@ You should follow me on:
 * [Twitter](https://twitter.com/nwjsmith)
 * [GitHub](https://github.com/nwjsmith)
 * [Speaker Deck](https://speakerdeck.com/nwjsmith)
-* [LinkedIn](https://ca.linkedin.com/in/nwjsmith)
+* [LinkedIn](https://www.linkedin.com/in/nwjsmith)
 
 # Posts
 {% for post in site.posts %}
