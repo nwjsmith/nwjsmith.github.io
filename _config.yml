@@ -1,10 +1,12 @@
 author: Nate Smith
 exclude:
-  - vendor
-  - README.md
   - Gemfile
   - Gemfile.lock
+  - README.md
   - Rakefile
+  - bin/
+  - circle.yml
+  - vendor/
 highlighter: rouge
 markdown: kramdown
 sass:
