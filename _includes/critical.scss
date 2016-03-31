@@ -1,0 +1,110 @@
+@import 'colors';
+
+$left-margin: 4ch;
+
+h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
+  max-width: 62ch;
+}
+
+html {
+  font-family: monospace;
+  font-size: 123.0769231%;
+  line-height: 1.5rem;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: $base3;
+  color: $base00;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $red;
+  font: normal 1rem monospace;
+  margin: 1.5rem $left-margin;
+
+  a, a:visited, a:hover {
+    color: $red;
+    text-decoration: none;
+  }
+}
+
+h1:before {
+  content: '# ';
+  margin-left: -2ch;
+}
+
+h2:before {
+  content: '## ';
+  margin-left: -3ch;
+}
+
+figure {
+  margin: 1.5rem 0;
+
+  &.highlight {
+    background: $base03;
+
+    pre {
+      margin-left: $left-margin;
+      overflow: scroll;
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+pre {
+  margin: 0;
+}
+
+p {
+  margin: 1.5rem $left-margin;
+
+  code:before, code:after {
+    color: $red;
+    content: "`";
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0 $left-margin;
+  padding: 0;
+
+  li {
+    &:before {
+      color: $base1;
+      content: "* ";
+      margin-left: -2ch;
+    }
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $violet;
+  }
+}
+
+hr {
+  line-height: 1.5rem;
+  margin: 0 $left-margin;
+  text-align: center;
+  border: 0;
+
+  &:before {
+    color: $cyan;
+    content: "* * *";
+  }
+}
+

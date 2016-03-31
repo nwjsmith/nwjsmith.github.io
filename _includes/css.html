@@ -1,0 +1,9 @@
+<script>
+window.requestAnimationFrame(function() {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '/css/theinternate.css';
+  var head = document.getElementsByTagName('head')[0];
+  head.parentNode.insertBefore(link, head);
+});
+</script>

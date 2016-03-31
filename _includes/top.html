@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/theinternate.css"></link>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/theinternate.css"></link> -->
     <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
     <title>{{ page.title }}</title>
+    <style>{% capture critical_styles %}{% include critical.scss %}{% endcapture %}
+      {{ critical_styles | scssify }}
+    </style>
   </head>
   <body>
     <div id="container">
