@@ -1,4 +1,6 @@
 author: Nate Smith
+exclude:
+  - vendor
 highlighter: rouge
 markdown: kramdown
 sass:
