@@ -19,3 +19,5 @@ task test: :build do
     }
   ).run
 end
+
+task ci: %i(build test)
