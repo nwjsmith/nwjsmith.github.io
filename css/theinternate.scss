@@ -4,14 +4,8 @@
 
 $left-margin: 4ch;
 
-figure.highlight pre, h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
-  min-width: 41ch;
-}
-
-@media screen and (min-width: 1024px) {
-  figure.highlight pre, h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
-    width: 62ch;
-  }
+h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
+  max-width: 62ch;
 }
 
 html {
@@ -27,7 +21,6 @@ body {
   color: $base00;
   margin: 0;
   padding-bottom: 1.5rem;
-  min-width: 45ch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,7 +51,7 @@ figure {
     background: $base03;
 
     pre {
-      margin: 0 $left-margin;
+      margin-left: $left-margin;
       overflow: scroll;
       padding: 1.5rem 0;
     }
