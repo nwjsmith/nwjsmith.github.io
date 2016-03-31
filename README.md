@@ -10,3 +10,5 @@ You should follow me on:
 * [GitHub](https://github.com/nwjsmith)
 * [Speaker Deck](https://speakerdeck.com/nwjsmith)
 * [LinkedIn](https://www.linkedin.com/in/nwjsmith)
+
+Copyright me
