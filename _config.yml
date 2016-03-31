@@ -1,6 +1,10 @@
 author: Nate Smith
 exclude:
   - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
 highlighter: rouge
 markdown: kramdown
 sass:
