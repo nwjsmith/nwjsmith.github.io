@@ -1,11 +1,15 @@
 <script>
   (function(document, window) {
     window.requestAnimationFrame(function() {
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "/css/theinternate.css";
+      var cssLink = document.createElement("link");
+      cssLink.rel = "stylesheet";
+      cssLink.href = "/css/theinternate.css";
+      var fontLink = document.createElement("link");
+      fontLink.rel = "stylesheet";
+      fontLink.href = "/css/hack.css";
       var head = document.getElementsByTagName("head")[0];
-      head.parentNode.insertBefore(link, head);
+      head.parentNode.insertBefore(cssLink, head);
+      head.parentNode.insertBefore(fontLink, head);
     });
   })(document, window);
 </script>
