@@ -7,6 +7,9 @@ exclude:
   - bin/
   - circle.yml
   - vendor/
+gem:
+  - jekyll-sass-converter
+  - jekyll-sitemap
 highlighter: rouge
 markdown: kramdown
 sass:
