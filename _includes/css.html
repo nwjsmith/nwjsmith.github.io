@@ -1,10 +1,12 @@
 <script>
   var callback = function(href) {
-    var link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = href;
-    var head = document.getElementsByTagName("head")[0];
-    head.parentNode.insertBefore(link, head);
+    return function() {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      var head = document.getElementsByTagName("head")[0];
+      head.parentNode.insertBefore(link, head);
+    };
   };
   var raf = requestAnimationFrame || mozRequestAnimationFrame ||
       webkitRequestAnimationFrame || msRequestAnimationFrame;
