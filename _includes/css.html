@@ -1,13 +1,18 @@
 <script>
-  window.requestAnimationFrame(function() {
-    var cssLink = document.createElement("link");
-    cssLink.rel = "stylesheet";
-    cssLink.href = "/css/theinternate.css";
-    var fontLink = document.createElement("link");
-    fontLink.rel = "stylesheet";
-    fontLink.href = "/css/hack.css";
+  var callback = function(href) {
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
     var head = document.getElementsByTagName("head")[0];
-    head.parentNode.insertBefore(cssLink, head);
-    head.parentNode.insertBefore(fontLink, head);
-  });
+    head.parentNode.insertBefore(link, head);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) {
+    raf(callback("/css/hack.css"));
+    raf(callback("/css/theinternate.css"));
+  } else {
+    window.addEventListener("load", callback("/css/hack.css"));
+    window.addEventListener("load", callback("/css/theinternate.css"));
+  }
 </script>
