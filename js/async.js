@@ -105,10 +105,4 @@
       })
     }
   }
-
-  window.WebFontConfig = {
-    active: function() { window.sessionStorage.fontsLoaded = true; },
-    custom: { families: ["Hack:n4,n7,i4,i7"] },
-    timeout: 1000
-  };
 })(window);
