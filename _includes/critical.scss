@@ -106,6 +106,16 @@ a {
   }
 }
 
+blockquote {
+  margin: 0;
+
+  p:before {
+    color: $base1;
+    content: "> ";
+    margin-left: -2ch;
+  }
+}
+
 hr {
   line-height: 1.5rem;
   margin: 0 $left-margin;
