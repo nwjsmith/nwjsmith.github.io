@@ -8,30 +8,6 @@
   font-family: 'Hack';
   src: url('../fonts/hack-regular-latin-webfont.eot?v=2.019');
   src: url('../fonts/hack-regular-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('../fonts/hack-regular-latin-webfont.woff2?v=2.019') format('woff2'), url('../fonts/hack-regular-latin-webfont.woff?v=2.019') format('woff'), url('../fonts/hack-regular-latin-webfont.ttf?v=2.019') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hack';
-  src: url('../fonts/hack-bold-latin-webfont.eot?v=2.019');
-  src: url('../fonts/hack-bold-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('../fonts/hack-bold-latin-webfont.woff2?v=2.019') format('woff2'), url('../fonts/hack-bold-latin-webfont.woff?v=2.019') format('woff'), url('../fonts/hack-bold-latin-webfont.ttf?v=2.019') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hack';
-  src: url('../fonts/hack-italic-latin-webfont.eot?v=2.019');
-  src: url('../fonts/hack-italic-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('../fonts/hack-italic-latin-webfont.woff2?v=2.019') format('woff2'), url('../fonts/hack-italic-latin-webfont.woff?v=2.019') format('woff'), url('../fonts/hack-italic-latin-webfont.ttf?v=2.019') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Hack';
-  src: url('../fonts/hack-bolditalic-latin-webfont.eot?v=2.019');
-  src: url('../fonts/hack-bolditalic-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('../fonts/hack-bolditalic-latin-webfont.woff2?v=2.019') format('woff2'), url('../fonts/hack-bolditalic-latin-webfont.woff?v=2.019') format('woff'), url('../fonts/hack-bolditalic-latin-webfont.ttf?v=2.019') format('truetype');
-  font-weight: 700;
-  font-style: italic;
 }

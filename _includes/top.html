@@ -26,28 +26,13 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>{{ page.title }}</title>
-    <script>
-      window.WebFontConfig = {
-        active: function() {
-          if (window.sessionStorage) {
-            try {
-              window.sessionStorage.fontsLoaded = true;
-            } catch(error) {
-              // QuotaExceeded
-            }
-          }
-        },
-        custom: { families: ["Hack:n4,n7,i4,i7"] },
-        timeout: 1000
-      };
-      if (sessionStorage.fontsLoaded) {
-        document.documentElement.classList.add("wf-active");
-      }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
     <style>{% capture critical_styles %}{% include critical.scss %}{% endcapture %}
       {{ critical_styles | scssify }}
     </style>
+    <script>
+      if (sessionStorage.fontsLoaded)
+        document.documentElement.classList.add("wf-active");
+    </script>
   </head>
   <body>
     <div id="container">
