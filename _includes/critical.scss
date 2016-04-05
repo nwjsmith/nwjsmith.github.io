@@ -1,12 +1,12 @@
 @import 'colors';
 
-@font-face {
-  font-family: 'Hack';
-  src: url('/fonts/hack-regular-latin-webfont.eot?v=2.019');
-  src: url('/fonts/hack-regular-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('/fonts/hack-regular-latin-webfont.woff2?v=2.019') format('woff2'), url('/fonts/hack-regular-latin-webfont.woff?v=2.019') format('woff'), url('/fonts/hack-regular-latin-webfont.ttf?v=2.019') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Hack';
+//   src: url('/fonts/hack-regular-latin-webfont.eot?v=2.019');
+//   src: url('/fonts/hack-regular-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('/fonts/hack-regular-latin-webfont.woff2?v=2.019') format('woff2'), url('/fonts/hack-regular-latin-webfont.woff?v=2.019') format('woff'), url('/fonts/hack-regular-latin-webfont.ttf?v=2.019') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 $left-margin: 4ch;
 
@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
 }
 
 html {
-  font-family: "Hack";
+  // font-family: "Hack";
+  font: 123.0769231% monospace;
   line-height: 1.6rem;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -30,7 +31,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $red;
-  font: normal 1rem "Hack";
+  // font: normal 1rem "Hack";
+  font: normal 1rem monospace;
   margin: 1.6rem $left-margin;
 
   a, a:visited, a:hover {
@@ -39,9 +41,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-code {
-  font-family: "Hack";
-}
+// code {
+//   font-family: "Hack";
+// }
 
 h1:before {
   content: '# ';
