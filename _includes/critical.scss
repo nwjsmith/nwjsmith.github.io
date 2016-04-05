@@ -9,6 +9,7 @@
 // }
 
 $left-margin: 4ch;
+$line-height: 1.8rem;
 
 h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
   max-width: 62ch;
@@ -17,7 +18,7 @@ h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
 html {
   // font-family: "Hack";
   font: 123.0769231% monospace;
-  line-height: 1.6rem;
+  line-height: $line-height;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -26,14 +27,14 @@ body {
   background: $base3;
   color: $base00;
   margin: 0;
-  padding-bottom: 1.6rem;
+  padding-bottom: $line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $red;
   // font: normal 1rem "Hack";
   font: normal 1rem monospace;
-  margin: 1.6rem $left-margin;
+  margin: $line-height $left-margin;
 
   a, a:visited, a:hover {
     color: $red;
@@ -56,7 +57,7 @@ h2:before {
 }
 
 figure {
-  margin: 1.6rem 0;
+  margin: $line-height 0;
 
   &.highlight {
     background: $base03;
@@ -64,7 +65,7 @@ figure {
     pre {
       margin-left: $left-margin;
       overflow: scroll;
-      padding: 1.6rem 0;
+      padding: $line-height 0;
     }
   }
 }
@@ -74,7 +75,7 @@ pre {
 }
 
 p {
-  margin: 1.6rem $left-margin;
+  margin: $line-height $left-margin;
 
   code:before, code:after {
     color: $red;
@@ -84,7 +85,7 @@ p {
 
 ul {
   list-style: none;
-  margin: 1.6rem $left-margin;
+  margin: $line-height $left-margin;
   padding: 0;
 
   li {
@@ -110,7 +111,7 @@ a {
 }
 
 hr {
-  line-height: 1.6rem;
+  line-height: $line-height;
   margin: 0 $left-margin;
   text-align: center;
   border: 0;
