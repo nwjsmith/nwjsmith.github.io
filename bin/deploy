@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+INTERNATE_REMOTE_USER="deploy"
+INTERNATE_REMOTE_HOST="159.203.25.9"
+INTERNATE_REMOTE_PATH="/var/www/theinternate.com"
+
+./bin/jekyll clean
+./bin/jekyll build
+
+rsync \
+  --delete \
+  --delete-after \
+  --recursive \
+  --verbose \
+  --rsync-path="sudo rsync" \
+  --rsh "ssh" \
+  _site/ \
+  "${INTERNATE_REMOTE_USER}@${INTERNATE_REMOTE_HOST}:${INTERNATE_REMOTE_PATH}"
