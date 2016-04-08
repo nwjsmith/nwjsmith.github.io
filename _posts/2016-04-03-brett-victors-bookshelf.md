@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Brett Victor's bookshelf
+title: Bret Victor's bookshelf
 ---
-# Brett Victor's bookshelf
+# Bret Victor's bookshelf
 
-On January 5, 2016 [Brett Victor tweeted](https://twitter.com/worrydream/status/684452792971341824) a [picture of his bookshelf](http://worrydream.com/Shelf2015/). I've catalogued all of the books, by topic, below. They cover a wide variety of subjects, and I think they're really interesting if you are a fan of Brett's work.
+On January 5, 2016 [Bret Victor tweeted](https://twitter.com/worrydream/status/684452792971341824) a [picture of his bookshelf](http://worrydream.com/Shelf2015/). I've catalogued all of the books, by topic, below. They cover a wide variety of subjects, and I think they're really interesting if you are a fan of Bret's work.
 
 (The links are not backed by a referral/affiliate program of any kind).
 
