@@ -6,8 +6,21 @@
  * -------------------------- */
 @font-face {
   font-family: 'Hack';
-  src: url('../fonts/hack-regular-latin-webfont.eot?v=2.019');
-  src: url('../fonts/hack-regular-latin-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('../fonts/hack-regular-latin-webfont.woff2?v=2.019') format('woff2'), url('../fonts/hack-regular-latin-webfont.woff?v=2.019') format('woff'), url('../fonts/hack-regular-latin-webfont.ttf?v=2.019') format('truetype');
+  src: url('../fonts/hack-regular-latin-webfont.woff2') format('woff2'),
+       url('../fonts/hack-regular-latin-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.wf-active body {
+  font: 81.25% 'Hack', monospace;
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6 {
+  font: 100% 'Hack', monospace;
 }
