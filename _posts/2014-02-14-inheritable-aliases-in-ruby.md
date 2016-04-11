@@ -2,8 +2,6 @@
 layout: post
 title: Inheritable aliases in Ruby
 ---
-# Inheritable aliases in Ruby
-
 Ruby's method aliases are pretty handy. So is inheritance. It's too bad that the two don't work well together:
 
 {% highlight ruby %}
