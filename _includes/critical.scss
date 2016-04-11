@@ -11,6 +11,56 @@
 $left-margin: 4ch;
 $line-height: 1.8rem;
 
+@media (min-width: 0) and (max-width: 719px) {
+  body {
+    line-height: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+  figure {
+    margin: 1.8rem 0;
+    pre {
+      padding: 1.8rem 0;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.8rem $left-margin;
+  }
+  p {
+    margin: 1.8rem $left-margin;
+  }
+  ul {
+    margin: 1.8rem $left-margin;
+  }
+  hr {
+    line-height: 1.8rem;
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  figure {
+    margin: 1.5rem 0;
+    pre {
+      padding: 1.5rem 0;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem $left-margin;
+  }
+  p {
+    margin: 1.5rem $left-margin;
+  }
+  ul {
+    margin: 1.5rem $left-margin;
+  }
+  hr {
+    line-height: 1.5rem;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
   max-width: 62ch;
 }
@@ -18,7 +68,6 @@ h1, h2, h3, h4, h5, h6, hr, li, p, ul, {
 html {
   // font-family: "Hack";
   font: 123.0769231% monospace;
-  line-height: $line-height;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -27,14 +76,12 @@ body {
   background: $base3;
   color: $base00;
   margin: 0;
-  padding-bottom: $line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $red;
   // font: normal 1rem "Hack";
   font: normal 1rem monospace;
-  margin: $line-height $left-margin;
 
   a, a:visited, a:hover {
     color: $red;
@@ -57,15 +104,12 @@ h2:before {
 }
 
 figure {
-  margin: $line-height 0;
-
   &.highlight {
     background: $base03;
 
     pre {
       margin-left: $left-margin;
       overflow: scroll;
-      padding: $line-height 0;
     }
   }
 }
@@ -75,8 +119,6 @@ pre {
 }
 
 p {
-  margin: $line-height $left-margin;
-
   code:before, code:after {
     color: $red;
     content: "`";
@@ -85,7 +127,6 @@ p {
 
 ul {
   list-style: none;
-  margin: $line-height $left-margin;
   padding: 0;
 
   li {
@@ -111,7 +152,6 @@ a {
 }
 
 hr {
-  line-height: $line-height;
   margin: 0 $left-margin;
   text-align: center;
   border: 0;
