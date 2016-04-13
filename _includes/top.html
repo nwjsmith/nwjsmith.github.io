@@ -29,6 +29,8 @@
     <style>{% capture critical_styles %}{% include critical.scss %}{% endcapture %}
       {{ critical_styles | scssify }}
     </style>
+    <link rel="preload" href="/css/highlight.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="path/to/mystylesheet.css"></noscript>
     <script>
       if (sessionStorage.fontsLoaded) {
         document.documentElement.classList.add('wf-active');
