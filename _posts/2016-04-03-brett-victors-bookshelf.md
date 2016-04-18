@@ -667,7 +667,7 @@ On January 5, 2016 [Bret Victor tweeted](https://twitter.com/worrydream/status/6
 * [Programming in Lua](https://www.amazon.com/dp/859037985X) by Roberto Ierusalimschy
 * [Lucid, the Dataflow Programming Language](https://www.amazon.com/dp/0127296506) by William W. Wadge
 * [Clause and Effect](https://www.amazon.com/dp/3540629718) by William Clocksin
-* [Sketchpad](https://www.amazon.com/dp/0307278298) by Ivan Edward Sutherland
+* [Sketchpad](https://web.archive.org/web/20130408133119/http://stinet.dtic.mil/cgi-bin/GetTRDoc?AD=AD404549&Location=U2&doc=GetTRDoc.pdf) by Ivan Edward Sutherland (thanks to [Paul McJones for finding this](https://twitter.com/pmcjones/status/721136699883986945))
 * [Smalltalk-80: The Interactive Programming Environment](https://www.amazon.com/dp/0201113724) by Adele Goldberg
 * [Smalltalk-80: Bits of History, Words of Advice](http://www.amazon.com/dp/0201116693) by Glen Krasner
 * [Smalltalk-80: The Language and its Implementation](https://www.amazon.com/dp/0201113716) by Adele Goldberg and David Robson
