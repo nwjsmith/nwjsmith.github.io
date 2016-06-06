@@ -1,6 +1,6 @@
 # The Internate
 
-[![Circle CI](https://circleci.com/gh/nwjsmith/nwjsmith.github.io.svg?style=svg)](https://circleci.com/gh/nwjsmith/nwjsmith.github.io)
+[![CircleCI](https://circleci.com/gh/nwjsmith/nwjsmith.github.io.svg?style=svg)](https://circleci.com/gh/nwjsmith/nwjsmith.github.io)
 
 The personal website of Nate Smith, a software developer from Toronto.
 
