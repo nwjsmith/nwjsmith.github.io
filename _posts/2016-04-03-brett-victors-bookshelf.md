@@ -158,7 +158,7 @@ On January 5, 2016 [Bret Victor tweeted](https://twitter.com/worrydream/status/6
 
 * [The Innovator's Dilemma](https://www.amazon.com/dp/0062060244) by Clayton M. Christensen
 * [The Essential Drucker](https://www.amazon.com/dp/0061345016) by Peter F. Drucker
-* [Peopleware](https://www.amazon.com/dp/0321934113) by Tom DeMarco and Tim Lister
+* [Peopleware](https://www.amazon.com/dp/B00DY5A8X2) by Tom DeMarco and Tim Lister
 * [The Design of Design](https://www.amazon.com/dp/0201362988) by Frederick P. Brooks Jr.
 * [The Mythical Man-Month](https://www.amazon.com/dp/0201835959) by Frederick P. Brooks Jr.
 
