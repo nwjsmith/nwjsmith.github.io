@@ -9,9 +9,3 @@ jobs:
     - checkout
     - run: bundle install
     - run: bin/rake ci
-
-workflows:
-  version: 2
-  pipeline:
-    jobs:
-      - build
