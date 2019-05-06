@@ -4,8 +4,8 @@ jobs:
   build:
     docker:
       - image: circleci/ruby
-  working_directory: /code
-  steps:
-    - checkout
-    - run: bundle install
-    - run: bin/rake ci
+    working_directory: /code
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bin/rake ci
