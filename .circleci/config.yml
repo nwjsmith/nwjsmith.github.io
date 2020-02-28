@@ -6,5 +6,6 @@ jobs:
       - image: circleci/ruby
     steps:
       - checkout
+      - run: gem install bundler --version=2.1.4
       - run: bundle install
       - run: bin/rake ci
