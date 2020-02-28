@@ -11,7 +11,7 @@ jobs:
             - bundle-v1-{{ checksum "Gemfile.lock" }}
             - bundle-v1-
       - run:
-          name: Install dependencies
+          name: Install dependency manager
           command: gem install bundler --version=2.1.4
       - run:
           name: Install dependencies
