@@ -22,3 +22,8 @@ jobs:
           key: bundle-v1-{{ checksum "Gemfile.lock" }}
           paths: vendor/bundle
       - run: bin/rake ci
+
+workflows:
+  pipeline:
+    jobs:
+      - build
