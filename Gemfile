@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '4.0.0'
-gem 'kramdown', '2.3.0'
+gem 'kramdown', '2.3.1'
 gem 'html-proofer', '3.15.1'
 gem 'rake', '13.0.1'
 
