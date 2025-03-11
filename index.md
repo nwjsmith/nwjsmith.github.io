@@ -7,10 +7,8 @@ The personal website of Nate Smith, a software developer from Toronto.
 
 You should follow me on:
 
-* [Twitter](https://twitter.com/nwjsmith)
+* [Bluesky](https://github.com/profile/theinternate.com)
 * [GitHub](https://github.com/nwjsmith)
-* [Speaker Deck](https://speakerdeck.com/nwjsmith)
-* [LinkedIn](https://www.linkedin.com/in/nwjsmith)
 
 # Posts
 {% for post in site.posts %}
