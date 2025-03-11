@@ -7,7 +7,7 @@ The personal website of Nate Smith, a software developer from Toronto.
 
 You should follow me on:
 
-* [Bluesky](https://github.com/profile/theinternate.com)
+* [Bluesky](https://bsky.app/profile/theinternate.com)
 * [GitHub](https://github.com/nwjsmith)
 
 # Posts
